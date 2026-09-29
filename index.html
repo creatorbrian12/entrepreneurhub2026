@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I&J Kitchen</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f6f6f6;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    background:white;
+    padding:70px 8%;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#e67e22;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    margin-right:10px;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 8%;
+    background:white;
+    margin-top:10px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* MENU */
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.menu-item{
+    background:#f9f9f9;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.popular{
+    color:#e67e22;
+    font-weight:bold;
+}
+
+/* DELIVERY */
+.delivery-box{
+    background:#fff3e6;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* REVIEWS */
+.reviews{
+    display:grid;
+    gap:15px;
+}
+
+.review{
+    background:#f9f9f9;
+    padding:15px;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact{
+    background:#111;
+    color:white;
+    padding:40px 8%;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">I&J Kitchen</div>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Freshly prepared and delivered to your door</h1>
+    <p>Delicious meals made with care, delivered anywhere in Kigali from Gisozi, Kibanza.</p>
+
+    <a class="btn" href="https://wa.me/250784016746">Order Now</a>
+    <a class="btn" href="tel:+250784016746">Call Now</a>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+<h2>Our Full Menu</h2>
+<p>What Would You Like Today? All meals freshly prepared.</p>
+
+<div class="menu-grid">
+
+<!-- SOUPS -->
+<div class="menu-item">
+<h3>Vegetable Soup</h3><p>3,000 FRW</p>
+</div>
+<div class="menu-item">
+<h3>Mushroom Soup <span class="popular">⭐ Popular</span></h3><p>4,000 FRW</p>
+</div>
+<div class="menu-item">
+<h3>Carrot Ginger Soup</h3><p>3,000 FRW</p>
+</div>
+
+<!-- BEEF -->
+<div class="menu-item">
+<h3>I&J Beef Fried <span class="popular">⭐ Popular</span></h3><p>8,000 FRW</p>
+</div>
+<div class="menu-item">
+<h3>Beef Steak <span class="popular">⭐ Popular</span></h3><p>7,000 FRW</p>
+</div>
+<div class="menu-item"><h3>Beef Stew</h3><p>5,000 FRW</p></div>
+<div class="menu-item"><h3>Beef Stroganoff</h3><p>5,000 FRW</p></div>
+<div class="menu-item"><h3>Beef Fajita</h3><p>6,500 FRW</p></div>
+<div class="menu-item"><h3>Beef Wrap</h3><p>5,000 FRW</p></div>
+<div class="menu-item"><h3>Beef Brochette</h3><p>2,000 FRW</p></div>
+
+<!-- CHICKEN -->
+<div class="menu-item">
+<h3>Grilled Chicken <span class="popular">⭐ Popular</span></h3><p>7,000 FRW</p>
+</div>
+
+<!-- MAIN DISHES -->
+<div class="menu-item"><h3>Boiled Beef</h3><p>5,000 FRW</p></div>
+<div class="menu-item"><h3>Agatogo <span class="popular">⭐ Popular</span></h3><p>5,000 FRW</p></div>
+<div class="menu-item"><h3>Fried Fish</h3><p>8,000 FRW</p></div>
+
+<!-- PILAU -->
+<div class="menu-item"><h3>Fish Pilau <span class="popular">⭐ Popular</span></h3><p>7,000 FRW</p></div>
+<div class="menu-item"><h3>Chicken Pilau</h3><p>6,000 FRW</p></div>
+<div class="menu-item"><h3>Beef Pilau</h3><p>5,000 FRW</p></div>
+
+<!-- BURGERS -->
+<div class="menu-item"><h3>Beef Cheese Burger <span class="popular">⭐ Popular</span></h3><p>7,000 FRW</p></div>
+<div class="menu-item"><h3>Chicken Burger <span class="popular">⭐ Popular</span></h3><p>7,000 FRW</p></div>
+<div class="menu-item"><h3>King Size Burger <span class="popular">⭐ Popular</span></h3><p>9,000 FRW</p></div>
+
+<!-- DRINKS -->
+<div class="menu-item"><h3>Mango Juice <span class="popular">⭐ Popular</span></h3><p>3,000 FRW</p></div>
+<div class="menu-item"><h3>Passion Juice <span class="popular">⭐ Popular</span></h3><p>3,000 FRW</p></div>
+<div class="menu-item"><h3>Strawberry Juice</h3><p>4,000 FRW</p></div>
+
+<!-- COFFEE -->
+<div class="menu-item"><h3>Cappuccino <span class="popular">⭐ Popular</span></h3><p>2,500 FRW</p></div>
+<div class="menu-item"><h3>Espresso</h3><p>1,500 FRW</p></div>
+<div class="menu-item"><h3>Hot Chocolate <span class="popular">⭐ Popular</span></h3><p>2,500 FRW</p></div>
+
+</div>
+</section>
+
+<!-- DELIVERY -->
+<section id="delivery">
+<h2>Delivery</h2>
+<div class="delivery-box">
+<p>Delivery Available in Kigali</p>
+<p>From Gisozi to Nyamirambo, Remera to Kicukiro</p>
+<p><b>Fast Delivery | Hot Meals | Easy Ordering</b></p>
+
+<a class="btn" href="https://wa.me/250784016746">Order on WhatsApp</a>
+<a class="btn" href="tel:+250784016746">Call Now</a>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+<h2>Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+<p>“The fried beef is amazing! Always hot and fast delivery.”</p>
+<b>Amina Uwimana</b>
+</div>
+
+<div class="review">
+<p>“Best pilau in Kigali. Family loved it!”</p>
+<b>Jean-Baptiste Nkurunziza</b>
+</div>
+
+<div class="review">
+<p>“Fast WhatsApp replies and delicious home-style food.”</p>
+<b>Claudine Mukamurenzi</b>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Get In Touch</h2>
+<p>Phone: +250 784 016 746</p>
+<p>Location: Gisozi, Kibanza — Kigali</p>
+<p>TikTok: @ijkichen</p>
+<p>Hours: Mon–Sun (8:00 AM – 10:00 PM)</p>
+</section>
+
+<footer>
+<p>© 2026 I&J Kitchen | Kigali, Rwanda</p>
+</footer>
+
+</body>
+</html>
